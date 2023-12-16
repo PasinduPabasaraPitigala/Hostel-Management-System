@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="729.0" prefWidth="1302.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.controller.DashBoardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#12777a" height="70.0" layoutX="209.0" stroke="#50577a" strokeType="INSIDE" width="1093.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#12777a" height="523.0" layoutY="207.0" stroke="#282a3a" strokeType="INSIDE" width="209.0" />
+      <AnchorPane fx:id="loadContext" blendMode="SRC_ATOP" layoutX="208.0" layoutY="70.0" prefHeight="650.0" prefWidth="1093.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="660.0" fitWidth="1094.0">
+               <image>
+                  <Image url="@../../../../resources/Assets/New%20folder/Dashboardbackwallpap.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="16.0" layoutY="14.0" prefHeight="91.0" prefWidth="1061.0" style="-fx-border-radius: 75%;" text="Welcome to D24 Hostel Management System ">
+               <font>
+                  <Font name="Gabriola" size="75.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.9714285714285715" endY="0.6" startX="0.18095238095238098" startY="0.2809523809523809">
+                     <stops>
+                        <Stop color="#3dc2ccaa" />
+                        <Stop color="#15a3e5c9" offset="0.2620373661966262" />
+                        <Stop color="#5d646b" offset="0.4501718213058415" />
+                        <Stop color="#9dcfb4" offset="0.6963700280443968" />
+                        <Stop color="#a443ab" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="lblDate" layoutX="838.0" layoutY="18.0" text="2020 - 10 -01" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1070.0" layoutY="18.0" text="20:04:36" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="755.0" layoutY="15.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="977.0" layoutY="15.0" text="Time : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1199.0" layoutY="15.0" onAction="#btnLogOutOnAction" prefHeight="36.0" prefWidth="80.0" style="-fx-background-color: #FF4C29;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="422.0" onAction="#btnRoomManagementOnAction" prefHeight="59.0" prefWidth="190.0" style="-fx-background-color: white;" text="Room Management" textFill="#7f7661" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="322.0" onAction="#btnStudentManagement" prefHeight="59.0" prefWidth="190.0" style="-fx-background-color: white;" text="Student Management" textFill="#7f7661" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="228.0" onAction="#btnRegistration" prefHeight="59.0" prefWidth="190.0" style="-fx-background-color: white;" text="Create Registration" textFill="#7f7661" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow color="#dac3c3" />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="520.0" onAction="#btnKeyMoneyOnAction" prefHeight="59.0" prefWidth="190.0" style="-fx-background-color: white;" text="Key Money Pending" textFill="#7f7661" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="615.0" onAction="#btnUserManagementOnAction" prefHeight="59.0" prefWidth="190.0" style="-fx-background-color: white;" text="User Management" textFill="#7f7661" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="207.0" fitWidth="209.0">
+         <image>
+            <Image url="@../../../../resources/Assets/New%20folder/Brown%20and%20Grey%20Illustrated%20Be%20Yourself%20Canvas%20Print.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

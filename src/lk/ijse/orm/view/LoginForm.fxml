@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginFormContext" prefHeight="694.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="694.0" fitWidth="1187.0">
+         <image>
+            <Image url="@../../../../resources/Assets/New%20folder/Untitled%20design.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblWrong" layoutX="35.0" layoutY="307.0" prefHeight="39.0" prefWidth="295.0" textFill="#bc1717" />
+      <Label layoutX="483.0" layoutY="51.0" prefHeight="66.0" prefWidth="257.0" text="User Login" textAlignment="CENTER" textFill="#0f3168" underline="true">
+         <font>
+            <Font name="Lucida Bright Regular" size="45.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="377.0" layoutY="143.0" opacity="0.88" prefHeight="506.0" prefWidth="433.0" style="-fx-background-color: DAD4B5;">
+         <children>
+            <Label layoutX="254.0" layoutY="298.0" prefHeight="21.0" prefWidth="118.0" text="Fogot Password?" textFill="#111111">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <CheckBox layoutX="21.0" layoutY="298.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="184.0" text="Remember Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="202.0" layoutY="332.0" prefHeight="32.0" prefWidth="32.0" text="or">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Separator layoutX="229.0" layoutY="347.0" prefHeight="5.0" prefWidth="167.0" />
+            <Separator layoutX="29.0" layoutY="347.0" prefHeight="5.0" prefWidth="157.0" />
+            <Label alignment="CENTER" layoutX="25.0" layoutY="373.0" prefHeight="26.0" prefWidth="382.0" text="Don't have an account ?">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="223.0" onAction="#btnLoginOnAction" prefHeight="54.0" prefWidth="369.0" style="-fx-background-color: #435334;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="26.0" />
+               </font>
+            </JFXButton>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="39.0" layoutX="103.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" width="295.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="39.0" layoutX="103.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" width="295.0" />
+            <JFXTextField fx:id="txtUserName" focusColor="BLACK" labelFloat="true" layoutX="105.0" layoutY="89.0" prefHeight="39.0" prefWidth="295.0" promptText="     User Name" />
+            <JFXPasswordField fx:id="txtPassword" focusColor="BLACK" labelFloat="true" layoutX="104.0" layoutY="159.0" prefHeight="39.0" prefWidth="295.0" promptText="    Password" />
+            <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="411.0" onAction="#btnLoginOnAction" prefHeight="32.0" prefWidth="341.0" style="-fx-background-color: #053B50;" text="Create a new account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="39.0" layoutY="89.0">
+               <image>
+                  <Image url="@../../../../resources/Assets/New%20folder/icons8-male-user-30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="39.0" layoutY="159.0">
+               <image>
+                  <Image url="@../../../../resources/Assets/New%20folder/icons8-lock-30.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

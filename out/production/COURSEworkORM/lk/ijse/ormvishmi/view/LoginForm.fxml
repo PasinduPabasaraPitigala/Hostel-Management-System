@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginFormContext" prefHeight="694.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="695.0" fitWidth="1189.0" layoutX="1.0">
+         <image>
+            <Image url="@../../../../../../D24HotelManagementSystem/src/lk/ijse/Vishmi/ormCW/view/assets/vecteezy_abstract-wave-blue-background_9871929.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="143.0" layoutX="25.0" layoutY="28.0">
+         <image>
+            <Image url="@../../../../resources/Assets/New folder/logo(2).png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblWrong" layoutX="35.0" layoutY="307.0" prefHeight="39.0" prefWidth="295.0" textFill="#bc1717" />
+      <Label layoutX="483.0" layoutY="51.0" prefHeight="66.0" prefWidth="257.0" text="User Login" textAlignment="CENTER" textFill="#0f3168" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="95.0" fitWidth="101.0" layoutX="377.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../D24HotelManagementSystem/src/lk/ijse/Vishmi/ormCW/view/assets/lock_500px.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="414.0" layoutY="146.0" prefHeight="500.0" prefWidth="433.0" style="-fx-background-color: #BAD7E9;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="41.0" layoutX="44.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../D24HotelManagementSystem/src/lk/ijse/Vishmi/ormCW/view/assets/icons8-male-user-30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="44.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../D24HotelManagementSystem/src/lk/ijse/Vishmi/ormCW/view/assets/icons8-lock-30.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="254.0" layoutY="298.0" prefHeight="21.0" prefWidth="118.0" text="Fogot Password?" textFill="#111111">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <CheckBox layoutX="21.0" layoutY="298.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="184.0" text="Remember Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="202.0" layoutY="332.0" prefHeight="32.0" prefWidth="32.0" text="or">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Separator layoutX="229.0" layoutY="347.0" prefHeight="5.0" prefWidth="167.0" />
+            <Separator layoutX="29.0" layoutY="347.0" prefHeight="5.0" prefWidth="157.0" />
+            <Label alignment="CENTER" layoutX="25.0" layoutY="373.0" prefHeight="26.0" prefWidth="382.0" text="Don't have an account ?">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="223.0" onAction="#btnLoginOnAction" prefHeight="41.0" prefWidth="341.0" style="-fx-background-color: #2980b9;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="39.0" layoutX="103.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" width="295.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="39.0" layoutX="103.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" width="295.0" />
+            <JFXTextField fx:id="txtUserName" focusColor="BLACK" labelFloat="true" layoutX="105.0" layoutY="89.0" prefHeight="39.0" prefWidth="295.0" promptText="     User Name" />
+            <JFXPasswordField fx:id="txtPassword" focusColor="BLACK" labelFloat="true" layoutX="104.0" layoutY="159.0" prefHeight="39.0" prefWidth="295.0" promptText="    Password" />
+            <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="411.0" onAction="#btnLoginOnAction" prefHeight="32.0" prefWidth="341.0" style="-fx-background-color: green;" text="Create a new account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
